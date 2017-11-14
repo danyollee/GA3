@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// void Kruskals(int, int, int, int, int*, int*, int, int, int, int, int*);
 int find(int, int[]);
 int uni(int, int, int[]);
 
@@ -107,35 +106,6 @@ int main(){
   }
 
 }
-
-// void Kruskals(int ne, int sizeOfGraph, int min, int mincost, int **graph2, int** storeInd, int a, int b, int u, int v, int parent[]){
-//   while(ne < sizeOfGraph){
-//     min = 4294967295;
-//     for(int i=0; i<sizeOfGraph; i++){
-//       for(int j=0; j<sizeOfGraph; j++){
-//         if(graph2[i][j]<min){
-//           // cout << "moving " << graph2[i][j] << " to min\n";
-//           min = graph2[i][j];
-//           a = u = i;
-//           b = v = j;
-//         }
-//       }
-//     }
-//     cout << "a=" << a << ", b=" << b << endl;
-//     u = find(u, parent);
-//     v = find(v, parent);
-//     if(uni(u, v, parent)){
-//       storeInd[ne-1][ne-1] = u;
-//       storeInd[ne-1][ne] = v;
-//       cout << ne++ << " edge (" << a << ", " << b << ") = " << min << endl;
-//       mincost += min;
-//       cout << "mincost is now " << mincost << endl;
-//     }
-//     graph2[a][b] = graph2[b][a] = 4294967295;
-//   }
-//
-// }
-
 
 
 int find(int i, int parent[]){
